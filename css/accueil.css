@@ -1,0 +1,282 @@
+/* un reset (avec sélecteur universel *{} pour supprimer toutes les marges externes et internes générées par défaut par les différents navigateurs */
+
+*{
+   margin: 0;
+   padding: 0;
+   
+  
+}
+
+body{
+
+   background-color: #141414;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+/* début de header */
+
+/* pour l'image background */
+.feature-film{
+   /* récupération de l'image d'arrière plan avec un degradé de transparence (respect de la maquette) puis je pointe avec url() vers mon image en sortant au préalable du dossier css (../) pour pouvoir ensuite entrer dans le dossier img (etc...) */
+   background: linear-gradient(to bottom,#141414,rgba(255,255,255,0),#141414 ), url(../img/accueil/bg_img.png)no-repeat center;
+   /* no-repeat, center et background-size vont faire en sorte que mon bg image s'adapte pour les petits ecrans */
+   background-size: cover;
+}
+/* fin bg image */
+
+.row{
+   /* cette propriété permet de mettre sur une même ligne, à l'horizontale, des éléments qui ont un comportement dit de type bloc ( <p>, <h1>, <section> etc...). Sans, ces balises s'afficheraient les unes au dessus des autres */
+   display:flex;
+   /* flex-wrap:wrap permet un retour à la ligne automatique (à l'horizontale comme à la verticale, si un bloc n'a plus de place pour s'afficher à la suite) */
+   flex-wrap: wrap;
+   
+}
+
+/* début de nav */
+.navigation{
+   /* une hauteur globale */
+   height: 3rem;
+
+   /* tous les éléments seront centrés à la verticale (pas besoin de margin top ou bottom) */
+   align-items: center;
+}
+
+.block{
+   /* permet d'avoir une même largeur par défaut pour tous les blocs contenus dans une .row */
+   flex:auto;
+}
+
+/* début zone logo */
+.logo{
+   /* largeur de 10% par rapport a la nav */
+   flex: 10%;
+   /* pour centrer l'image dans cette largeur de 10% (équivalent a width: 10%) */
+   text-align: center;
+}
+/* fin zone logo */
+
+/* zone nav principale */
+.nav-principale{
+   flex: 50%;
+}
+
+/* je cible la liste seulement de la classe feature-film, et pas toutes les autres */
+.feature-film ul li{
+   /* va donner un comportement de type inline (affichage à l'horizontale) à la liste qui a de base un comportement de type block (affichage à la verticale) */
+   display: inline;
+   /* couleur de texte */
+   color: white;
+   /* taille du texte */
+   font-size: 1.1rem;
+}
+
+/* pour cibler les liens <a> de la liste */
+.feature-film ul li a{
+   /* couleur de police */
+   color: white;
+   /* une marge de 0 en haut, de 0.8 a droite, de 0 en bas et de 0.8 a gauche */
+   margin: 0 .8rem 0 .8rem;
+   /* pour supprimer les soulignés des liens dans la nav */
+   text-decoration: none;
+}
+
+/* fin zone nav principale */
+
+/* zone infos */
+.infos{
+   color: white;
+   flex: 30%;
+   text-align: right;
+   font-size: 1.1rem;
+}
+
+/* je sépare les éléments entre eux */
+.infos i, .infos span{
+   margin-right: 1rem;
+}
+
+/* moins de margin-right entre l'image logo et l'icone fleche bas sur sa droite */
+.infos img{
+   margin-right: .1rem;
+}
+
+/* fin zone infos */
+
+/* fin de nav */
+
+/*Zone résumé film */
+
+.text{
+   color: white;
+   margin-left: 4.5rem;
+}
+
+.text h2 {
+   color: #ad1c26;
+   margin-top: 10rem;
+   font-size: 5rem;
+}
+.top-movie{
+   margin: 1rem 0 1rem 0;
+}
+.top-movie h3{
+   font-size: 2rem;
+   margin-left: 1rem;
+}
+
+.text p{
+   font-size: 1.5rem;
+   width: 40%;
+   margin-bottom: 1rem;
+}
+
+.buttons .left-button{
+   background-color: white;
+   padding: .5rem;
+   text-align: center;
+   align-items: center;
+   color: black;
+   border-radius: 5%;
+   width: 10rem;
+}
+
+.buttons .left-button .fa-solid{
+   font-size: 3rem;
+}
+.buttons .left-button span{
+   font-size: 1.5rem;
+}
+
+
+
+.buttons .right-button{
+   background-color: grey;
+   margin-left: .5rem;
+   padding: .5rem;
+   text-align: center;
+   align-items: center;
+   color: white;
+   border-radius: 5%;
+   width: 10rem; 
+   
+   
+}
+
+.buttons .right-button .fa-solid{
+   font-size: 3rem;
+}
+
+.buttons .right-button span{
+   font-size: 1.5rem;
+}
+
+.buttons .text-end{
+   margin-left: auto;
+   background-color: grey;
+   width: 5rem;
+   font-size: 1.3rem;
+   padding: .5rem 2rem .5rem 2rem;
+   align-self: flex-end;
+}
+
+.columns{
+   justify-content: center;
+   text-align: center;
+   /* toute les lettres en majuscules*/
+   text-transform: uppercase;
+}
+.left-columns , .right-columns{
+   padding: 1rem;
+}
+.left-columns{
+   border-right: 1px solid rgba(255, 255, 255, 0.349);
+}
+
+.left-columns i , .right-columns i {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+}
+
+.left-columns p{
+   width: 100%;
+}
+.right-columns p{
+   width: 80%;
+}
+
+/*Fin Zone résumé film */
+/* fin de header */
+/**********************************************************************************/
+/*Début de main*/
+/*chaque catégorie*/
+
+h2.title{
+   margin: 1rem 0 0 1rem;
+   color: white;
+}
+
+.hidden-icon{
+   /* marge en haut de 0.8 rem, */
+   margin: .8rem 1rem 0 1rem;
+   font-size: 2rem;
+   color: white;
+}
+
+.films{
+   margin: 1rem .5rem 1.5rem .5rem;
+   width: 10%;
+   
+}
+.films:first-child{
+   margin-left: 1.5rem;
+}
+
+.films:last-child{
+   margin-right: 1.5rem;
+}
+
+.width{
+   width: 40%;
+}
+
+/*Fin de main*/
+
+/*******************************************************************************/
+
+
+/*début footer*/
+footer{
+margin-left: 30rem;
+  
+}
+.hidden-icon-footer{
+   margin: .8rem 1rem 0 1rem;
+   font-size: 2rem;
+   color: white;
+   margin-top: 5rem;
+   margin-left: 2rem;
+}
+footer h4{
+   color: grey;
+   font-size: 1rem;
+   margin-left: 2rem;
+   margin-top: 3rem;
+
+}
+footer button{
+   background-color:#141414;
+   margin-top: 2rem;
+   padding: .5rem;
+   color: grey;
+   border-radius: 5% grey;
+   width: 10rem; 
+   font-size: 1rem;
+   margin-left: 2rem;
+}
+footer p{
+   color: grey;
+   margin-top: 1rem;
+   margin-left: 2rem;
+}
+/*fin footer*/

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil Netflix</title>
+
+    <!-- cdn fontawesome -->
+    <script src="https://kit.fontawesome.com/022af0f2e4.js" crossorigin="anonymous"></script>
+
+    <!-- liens vers mes deux css
+    D'abord vers celui ou je scripterai tous mes media-queries (pour cette page et les autres)
+    Puis le css de la page en particulier -->
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/accueil.css">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- une div classname feature-film qui va comporter tous les éléments du header (<nav>, résumé film) qui auront pour point commun l'image du fil en arrière plan -->
+        <div class="feature-film">
+            <!-- par convention (W3C + Google) les barres de navigation sont a declarer dans une balise <nav> -->
+            <nav>
+                <!-- deux classnames pour cette div. Le premier, commun a plusieurs autres <div> de cette page. Et navigation, spécifique à cette div -->
+                <div class="row navigation">
+                    <div class="block logo">
+                        <a href="index.html"><img src="img/accueil/logo_netflix.png" alt="le logo de Netflix"></a>
+                    </div>
+                    <div class="block nav-principale">
+                        <ul>
+                            <li>Accueil</li>
+                            <li><a href="#">Séries</a></li>
+                            <li><a href="#">Films</a></li>
+                            <li><a href="#">Nouveautés les plus regardées</a></li>
+                            <li><a href="#">Ma liste</a></li>
+                            <li><a href="#">Recherche par langue</a></li>
+                        </ul>
+                    </div>
+                    <div class="block infos">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span>DIRECT</span>
+                        <i class="fa-solid fa-bell"></i>
+                        <img src="img/accueil/icone.png" alt="">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+
+                </div>
+
+            </nav>
+            <div class="text">
+                <h2>DOWNSIZING</h2>
+                <div class="row top-movie">
+                    <img src="img/accueil/top_10.png" alt="">
+                    <h3>N°2 des films aujourd'hui</h3>
+
+                </div>
+                <p>Un couple se laisse convaincre par un procédé révolutionnaire qui les réduit à une taille 12 cm afin
+                    de vivre comme des millionnaires dans une ville miniature </p>
+                <div class="row buttons">
+
+                    <div class="row left-button"><i class=" block fa-solid fa-caret-right"></i><span
+                            class="block">Lecture</span>
+                    </div>
+
+                    <div class="row right-button"><i class="block fa-solid fa-circle-info"></i><span class="block">Plus
+                            d'infos</span></div>
+
+                    <div class="text-end">13+</div>
+                </div>
+                <div class="row columns">
+                    <div class=" left-columns">
+                        <i class="fa-regular fa-square-caret-right"></i>
+                        <p>Ce drame devrait vous plaire</p>
+                    </div>
+                    <div class="right-columns">
+                        <i class="fa-sharp fa-solid fa-chair"></i>
+                        <p>Matt damon - Christopher Waltz - Hong chau</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <div>
+            <div class="row">
+                <h2 class="title">Revoir</h2><a class="hidden-icon" href="#"><i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/sense_8.png" alt="" class="block films">
+                <img src="img/accueil/jack_reacher.png" alt="" class="block films">
+                <img src="img/accueil/the_witcher.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/fear_street_3.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/old_guard.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/terminator_renaissance.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+        <div>
+            <div class="row">
+                <h2 class="title">Tendences Actuelles</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/dahmer.png" alt="" class="block films">
+                <img src="img/accueil/downsizing.png" alt="" class="block films">
+                <img src="img/accueil/battleship.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/mib_international.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/cyberpunk.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/fury.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+
+        <div>
+            <div class="row">
+                <h2 class="title">Appréciés sur Netflix</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/mib.png" alt="" class="block films">
+                <img src="img/accueil/creed.png" alt="" class="block films">
+                <img src="img/accueil/elysium.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/last_knights.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/2012.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/le_stratege.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+
+        <div>
+            <div class="row">
+                <h2 class="title">Ma Liste</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/la_defense_lincoln.png" alt="" class="block films">
+                <img src="img/accueil/anatomie_scandale.png" alt="" class="block films">
+                <img src="img/accueil/brightburn.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/poupee_russe.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/master_none.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/les_7_vies.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+
+        <div>
+            <div class="row">
+                <h2 class="title">Seulement sur Netflix</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/dont_look_up.png" alt="" class="block films">
+                <img src="img/accueil/the_harder_they.png" alt="" class="block films">
+                <img src="img/accueil/adam_a_travers.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/ozark.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/army_of_thieves.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/the_guilty.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+        <div>
+            <div class="row">
+                <h2 class="title">Films primés</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/le_garcon_qui.png" alt="" class="block films">
+                <img src="img/accueil/sans_un_bruit.png" alt="" class="block films">
+                <img src="img/accueil/little.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/metallica_some_kind.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/zero_dark_thirty.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/arnaque_crimes_botanique.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+        <div>
+            <div class="row">
+                <h2 class="title">Reprendre avec le profil de Aziz</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row width ">
+                <img src="img/accueil/sandman.png" alt="" class="block films">
+                <img src="img/accueil/total_recall.png" alt="" class="block films">
+            </div>
+
+        </div>
+
+
+        <div>
+            <div class="row">
+                <h2 class="title">Ajouts récent</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/voyage_vers_infini.png" alt="" class="block films">
+                <img src="img/accueil/lepreuve_de_feu.png" alt="" class="block films">
+                <img src="img/accueil/la_french.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/si_tu_me_venges.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/illuminations_minions.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/apollo_11.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+
+        <div>
+            <div class="row">
+                <h2 class="title">Films policiers inspirés de livres</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/minority_report.png" alt="" class="block films">
+                <img src="img/accueil/peur_primale.png" alt="" class="block films">
+                <img src="img/accueil/lexorciste3.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/les_pleins_pouvoirs.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/sleepers.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/la_confidential.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+        <div>
+            <div class="row">
+                <h2 class="title">Séries saluées par la critique à regarder sans modération</h2><a class="hidden-icon"
+                    href="#"><i class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/orange_black.png" alt="" class="block films">
+                <img src="img/accueil/la_chronique_bridgerton.png" alt="" class="block films">
+                <img src="img/accueil/the_sinner.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/squid_game.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/breaking_bad.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/better_call_saul.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+
+        <div>
+            <div class="row">
+                <h2 class="title">Nouveautés</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/mib_international.png" alt="" class="block films">
+                <img src="img/accueil/downsizing.png" alt="" class="block films">
+                <img src="img/accueil/exorcist_beginning.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/lexorciste3.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/limperatrice.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/blonde.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+
+
+        <div>
+            <div class="row">
+                <h2 class="title">Nommés aux Saturn Awards </h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/carrie.png" alt="" class="block films">
+                <img src="img/accueil/dracula_untold.png" alt="" class="block films">
+                <img src="img/accueil/mama.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/blanch_neige.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/sermons_minuit.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/entretien_vampire.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+        <div>
+            <div class="row">
+                <h2 class="title">Blockbusters</h2><a class="hidden-icon" href="#"><i
+                        class="fa-solid fa-caret-right"></i></a>
+            </div>
+            <div class="row">
+                <img src="img/accueil/la_memoire_peau.png" alt="" class="block films">
+                <img src="img/accueil/batman_vs_superman.png" alt="" class="block films">
+                <img src="img/accueil/bird_box.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/warcraft_commencement.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/oceans13.png" alt="" class="block films hidden-movies">
+                <img src="img/accueil/ghost.png" alt="" class="block films hidden-movies">
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+            <div class="row">
+                <i class="  hidden-icon-footer  fa-brands fa-facebook-f"></i>
+                <i class="  hidden-icon-footer  fa-brands fa-instagram"></i>
+                <i class="  hidden-icon-footer  fa-brands fa-twitter"></i>
+                <i class="  hidden-icon-footer  fa-brands fa-youtube"></i>
+            </div>
+            <div class="row ">
+                <h4>Audiodescription</h4>
+                <h4>Centre d'aide</h4>
+                <h4>Cartes cadeaux</h4>
+                <h4>Presse</h4>
+            </div>
+            <div class="row ">
+                <h4>Relations investisseurs</h4>
+                <h4>Recrutement</h4>
+                <h4>Conditions d'utilisation</h4>
+                <h4>Confidentialité</h4>
+            </div>
+            <div class="row ">
+                <h4>Informations légales</h4>
+                <h4>Préference de cookies</h4>
+                <h4>Montions légales</h4>
+                <h4>Nous contacter</h4>
+            </div>
+            <button class="block">code de service</button>
+            <p>© 1993-2022 Netflix ,Inc. (ebbc1bfa-c449-41a2-b7b9-cd390f40d5db)</p>
+    </footer>
+
+</body>
+
+</html>

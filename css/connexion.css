@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url(../img/connexion/bg-img.jpg)no-repeat center;
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.conteneur{
+    /* couleur en transparence pour assombrir le bg-img de body */
+    background-color: #14141432;
+}
+
+.logo{
+    margin: 1rem 0 0 2rem;
+}
+
+main{
+    width:20%;
+    margin: auto;
+    background-color: #141414e7;
+    padding: 4rem 1.5rem 6rem 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.contenu{
+    width: 80%;
+    margin-left: 10%;
+}
+
+h1{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* display:flex permet d'aligner à l'horizontale des éléments qui naturellement ne s'afficheraient que les uns au dessus des autres (comportement type block) */
+.row-footer{
+    display:flex;
+}
+
+/* flex:auto, permet de donner une largeur égale a tous les éléments d'une même row, de manière à occuper 100% de la largeur de cette dernière */
+.column{
+    flex:auto;
+}
+
+form label{
+    background-color: #333333;
+    color: black;
+}
+
+form input{
+    height: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: #333333;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding-left: .5rem;
+}
+
+form .validate{
+    background-color: #e50914;
+    color: white;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.row, p{
+    color: #808080;
+}
+
+.row input{
+    margin-right: .5rem;
+}
+
+/* pour aligner à droite le texte de ce paragraphe (ne fonctionne pas avec un text-align: right) */
+.row p{
+   margin-left: auto;
+}
+
+.inscription{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.inscription a{
+    color: white;
+    text-decoration: none;
+}
+
+.bots{
+    font-size: .8rem;
+}
+
+.bots a{
+    text-decoration: none;
+}
+
+/* footer */
+footer{
+    background-color: #141414e7;
+}
+
+.footer-connexion{
+    width: 50%;
+    margin: auto;
+    color: #808080;
+    padding: 1rem 0 1rem 0;
+}
+
+.footer-connexion ul li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.footer-connexion ul li a{
+    text-decoration: none;
+    color: #808080;
+}
+
+.selecteur{
+    padding: .5rem;
+    border: 1px solid #808080;
+    width: 8rem;
+}
+
+.selecteur i{
+    margin: 0 .5rem 0 .5rem;
+}
+/* footer */

@@ -1,0 +1,26 @@
+@media screen and (min-width: 400px) and (max-width: 768px){
+    main{
+        width: 80% ;
+    }
+    .footer-connexion{
+        width: 90%
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    main{
+        width: 60% ;
+    }
+    .footer-connexion{
+        width: 90%
+    }
+}
+
+/* pour les écrans intermédiaires ordinateurs portables */
+@media screen and (min-width: 993px) and (max-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1201px){
+    
+}
